@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		659A4F861BD3DB7A004B79BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A4F851BD3DB7A004B79BA /* AppDelegate.swift */; };
+		659A4F881BD3DB7A004B79BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A4F871BD3DB7A004B79BA /* ViewController.swift */; };
+		659A4F8B1BD3DB7A004B79BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659A4F891BD3DB7A004B79BA /* Main.storyboard */; };
+		659A4F8D1BD3DB7A004B79BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659A4F8C1BD3DB7A004B79BA /* Assets.xcassets */; };
+		659A4F901BD3DB7A004B79BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659A4F8E1BD3DB7A004B79BA /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		659A4F821BD3DB79004B79BA /* Touch ID And Keychain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Touch ID And Keychain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		659A4F851BD3DB7A004B79BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		659A4F871BD3DB7A004B79BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		659A4F8A1BD3DB7A004B79BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		659A4F8C1BD3DB7A004B79BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		659A4F8F1BD3DB7A004B79BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		659A4F911BD3DB7A004B79BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		659A4F7F1BD3DB79004B79BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		659A4F791BD3DB79004B79BA = {
+			isa = PBXGroup;
+			children = (
+				659A4F841BD3DB79004B79BA /* Touch ID And Keychain */,
+				659A4F831BD3DB79004B79BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		659A4F831BD3DB79004B79BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				659A4F821BD3DB79004B79BA /* Touch ID And Keychain.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		659A4F841BD3DB79004B79BA /* Touch ID And Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				659A4F851BD3DB7A004B79BA /* AppDelegate.swift */,
+				659A4F871BD3DB7A004B79BA /* ViewController.swift */,
+				659A4F891BD3DB7A004B79BA /* Main.storyboard */,
+				659A4F8C1BD3DB7A004B79BA /* Assets.xcassets */,
+				659A4F8E1BD3DB7A004B79BA /* LaunchScreen.storyboard */,
+				659A4F911BD3DB7A004B79BA /* Info.plist */,
+			);
+			path = "Touch ID And Keychain";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		659A4F811BD3DB79004B79BA /* Touch ID And Keychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 659A4F941BD3DB7A004B79BA /* Build configuration list for PBXNativeTarget "Touch ID And Keychain" */;
+			buildPhases = (
+				659A4F7E1BD3DB79004B79BA /* Sources */,
+				659A4F7F1BD3DB79004B79BA /* Frameworks */,
+				659A4F801BD3DB79004B79BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Touch ID And Keychain";
+			productName = "Touch ID And Keychain";
+			productReference = 659A4F821BD3DB79004B79BA /* Touch ID And Keychain.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		659A4F7A1BD3DB79004B79BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Yohannes Wijaya";
+				TargetAttributes = {
+					659A4F811BD3DB79004B79BA = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 4Z5JKF2M6S;
+					};
+				};
+			};
+			buildConfigurationList = 659A4F7D1BD3DB79004B79BA /* Build configuration list for PBXProject "Touch ID And Keychain" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 659A4F791BD3DB79004B79BA;
+			productRefGroup = 659A4F831BD3DB79004B79BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				659A4F811BD3DB79004B79BA /* Touch ID And Keychain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		659A4F801BD3DB79004B79BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659A4F901BD3DB7A004B79BA /* LaunchScreen.storyboard in Resources */,
+				659A4F8D1BD3DB7A004B79BA /* Assets.xcassets in Resources */,
+				659A4F8B1BD3DB7A004B79BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		659A4F7E1BD3DB79004B79BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659A4F881BD3DB7A004B79BA /* ViewController.swift in Sources */,
+				659A4F861BD3DB7A004B79BA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		659A4F891BD3DB7A004B79BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				659A4F8A1BD3DB7A004B79BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		659A4F8E1BD3DB7A004B79BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				659A4F8F1BD3DB7A004B79BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		659A4F921BD3DB7A004B79BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		659A4F931BD3DB7A004B79BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		659A4F951BD3DB7A004B79BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Touch ID And Keychain/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.example.Touch-ID-And-Keychain";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		659A4F961BD3DB7A004B79BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Touch ID And Keychain/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.example.Touch-ID-And-Keychain";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		659A4F7D1BD3DB79004B79BA /* Build configuration list for PBXProject "Touch ID And Keychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659A4F921BD3DB7A004B79BA /* Debug */,
+				659A4F931BD3DB7A004B79BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		659A4F941BD3DB7A004B79BA /* Build configuration list for PBXNativeTarget "Touch ID And Keychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659A4F951BD3DB7A004B79BA /* Debug */,
+				659A4F961BD3DB7A004B79BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 659A4F7A1BD3DB79004B79BA /* Project object */;
+}
