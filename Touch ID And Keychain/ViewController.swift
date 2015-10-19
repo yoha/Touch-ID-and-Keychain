@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 class ViewController: UIViewController {
     
@@ -17,7 +18,35 @@ class ViewController: UIViewController {
     // MARK: - IBAction Properties
     
     @IBAction func authenticateUser(sender: UIButton) {
-        self.unlockSecretMessage()
+        let localAuthenticationContext = LAContext()
+        var error: NSError?
+        
+        if localAuthenticationContext.canEvaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, error: &error) {
+            let reason = "Identify yourself w/ your fingerprint!"
+            
+            localAuthenticationContext.evaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, localizedReason: reason, reply: { [unowned self] (success: Bool, authenticationError: NSError?) -> Void in
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    if success { self.unlockSecretMessage() }
+                    else {
+                        if let error = authenticationError {
+                            if error.code == LAError.UserFallback.rawValue {
+                                let alertController = UIAlertController(title: "Passcode? Ha!", message: "It's Touch ID or nothing. Sorry!", preferredStyle: .Alert)
+                                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                                self.presentViewController(alertController, animated: true, completion: nil)
+                            }
+                        }
+                        let ac = UIAlertController(title: "Authentication failed", message: "Your finger could not be verified. Please try again.", preferredStyle: .Alert)
+                        ac.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                        self.presentViewController(ac, animated: true, completion: nil)
+                    }
+                })
+            })
+        }
+        else {
+            let alertController = UIAlertController(title: "Touch ID is not available", message: "Your device is not configured for Touch ID.", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
     }
     
     // MARK: - Methods Override
