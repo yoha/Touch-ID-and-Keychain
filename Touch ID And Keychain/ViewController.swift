@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     // MARK: - IBAction Properties
     
     @IBAction func authenticateUser(sender: UIButton) {
+        self.unlockSecretMessage()
     }
     
     // MARK: - Methods Override
@@ -24,9 +25,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Nothing to see here!"
+        
         let notificationCenter = NSNotificationCenter.defaultCenter()
         notificationCenter.addObserver(self, selector: "adjustForKeyboard", name: UIKeyboardWillHideNotification, object: nil)
         notificationCenter.addObserver(self, selector: "adjustForKeyboard", name: UIKeyboardWillChangeFrameNotification, object: nil)
+        
+        notificationCenter.addObserver(self, selector: "saveSecretMessage", name: UIApplicationWillResignActiveNotification, object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,6 +58,24 @@ class ViewController: UIViewController {
         
         let selectedRange = self.secretTextView.selectedRange
         self.secretTextView.scrollRangeToVisible(selectedRange)
+    }
+    
+    func saveSecretMessage() {
+        if !self.secretTextView.hidden {
+            KeychainWrapper.setString(self.secretTextView.text, forKey: "SecretMessage")
+            self.secretTextView.resignFirstResponder()
+            self.secretTextView.hidden = true
+            self.title = "Nothing to see here!"
+        }
+    }
+    
+    func unlockSecretMessage() {
+        self.secretTextView.hidden = false
+        self.title = "Classified. Echelon 1 only."
+        
+        if let decodedText = KeychainWrapper.stringForKey("SecretMessage") {
+            self.secretTextView.text = decodedText
+        }
     }
 }
 
